@@ -46,7 +46,7 @@ end
 
 gem 'blacklight'
 gem 'hydra-head'
-gem 'sufia'
+gem 'sufia', git: 'http://github.com/mdaines/sufia.git'
 gem 'kaminari', git: 'http://github.com/harai/kaminari.git', branch: 'route_prefix_prototype'  # required to handle pagination properly in dashboard. See https://github.com/amatsuda/kaminari/pull/322
 gem 'jettywrapper'
 gem 'font-awesome-sass-rails'
