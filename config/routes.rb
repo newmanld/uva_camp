@@ -63,4 +63,9 @@ UvaCamp::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  
+  namespace :admin do
+    mount Resque::Server, :at => "queues"
+  end
+  
 end
