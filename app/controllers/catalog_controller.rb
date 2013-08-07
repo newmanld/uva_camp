@@ -99,6 +99,7 @@ class CatalogController < ApplicationController
     config.add_facet_field solr_name("desc_metadata__based_near", :facetable), :label => "Location", :limit => 5
     config.add_facet_field solr_name("desc_metadata__publisher", :facetable), :label => "Publisher", :limit => 5
     config.add_facet_field solr_name("file_format", :facetable), :label => "File Format", :limit => 5
+    config.add_facet_field Solrizer.solr_name("collection", :facetable), :label => "Collection",  :helper_method => :collection_title_from_pid,  :limit => 5
 
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request
@@ -142,7 +143,6 @@ class CatalogController < ApplicationController
     config.add_show_field solr_name("desc_metadata__resource_type", :stored_searchable, type: :string), :label => "Resource Type"
     config.add_show_field solr_name("desc_metadata__format", :stored_searchable, type: :string), :label => "File Format"
     config.add_show_field solr_name("desc_metadata__identifier", :stored_searchable, type: :string), :label => "Identifier"
-    config.add_facet_field solr_name("collection", :facetable), label: "Collection", helper_method: :collection_name
 
     # "fielded" search configuration. Used by pulldown among other places.
     # For supported keys in hash, see rdoc for Blacklight::SearchFields
