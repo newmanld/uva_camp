@@ -1,0 +1,9 @@
+<h1>Edit Collection</h1>
+
+<%= render 'form' %>
+
+
+<h2>Manage Items in this Collection</h2>
+
+<%= render 'collections/sort_and_per_page' %>
+<%= render partial:'document_list', locals:{documents: @member_docs, document_list_format:"dashboard"} %>

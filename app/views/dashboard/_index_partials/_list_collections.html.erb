@@ -4,7 +4,7 @@
 on element ids -->
 <% noid = document.noid %>
 <tr id="document_<%= noid %>" class="<%= cycle("","zebra") %>">
-  <td width="6%"></td> 
+  <td width="6%"><%= batch_edit_select(document) %>&nbsp;</td> 
   <td width="1%">
   </td>
   <td width="37%">
