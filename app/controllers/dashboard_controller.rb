@@ -5,4 +5,7 @@ class DashboardController < ApplicationController
   layout 'sufia-two-column'
   
   before_filter :find_collections, :only=>:index  
+  
+  helper :collections
+  
 end
