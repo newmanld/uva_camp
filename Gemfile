@@ -57,6 +57,7 @@ gem "devise"
 gem "devise-guests", "~> 0.3"
 gem "bootstrap-sass"
 gem "activerecord-import"
+gem 'hydra-collections'
 
 group :development, :test do
   gem "rspec-rails"

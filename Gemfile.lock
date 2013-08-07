@@ -391,6 +391,7 @@ DEPENDENCIES
   devise-guests (~> 0.3)
   factory_girl_rails
   font-awesome-sass-rails
+  hydra-collections
   hydra-head
   jbuilder (~> 1.2)
   jettywrapper

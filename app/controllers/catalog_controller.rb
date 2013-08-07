@@ -36,6 +36,8 @@ class CatalogController < ApplicationController
 
   skip_before_filter :default_html_head
 
+  helper :collections
+
   def index
     super
     recent
@@ -140,6 +142,7 @@ class CatalogController < ApplicationController
     config.add_show_field solr_name("desc_metadata__resource_type", :stored_searchable, type: :string), :label => "Resource Type"
     config.add_show_field solr_name("desc_metadata__format", :stored_searchable, type: :string), :label => "File Format"
     config.add_show_field solr_name("desc_metadata__identifier", :stored_searchable, type: :string), :label => "Identifier"
+    config.add_facet_field solr_name("collection", :facetable), label: "Collection", helper_method: :collection_name
 
     # "fielded" search configuration. Used by pulldown among other places.
     # For supported keys in hash, see rdoc for Blacklight::SearchFields
