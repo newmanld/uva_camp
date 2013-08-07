@@ -14,9 +14,14 @@
 # limitations under the License.
 
 class CollectionsController < ApplicationController
+  
   include Hydra::CollectionsControllerBehavior
+  
+  include BlacklightAdvancedSearch::ParseBasicQ
+  include BlacklightAdvancedSearch::Controller
   
   include Sufia::Noid # for normalize_identifier method
   prepend_before_filter :normalize_identifier, :except => [:index, :create, :new]
+  
   
 end
