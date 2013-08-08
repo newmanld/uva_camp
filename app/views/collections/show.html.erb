@@ -1,0 +1,9 @@
+<h1><%=@collection.title%>
+    <%- if current_user -%>
+      <sup>[<%= link_to 'edit', collections.edit_collection_path(@collection) %>]</sup>
+    <%- end -%>
+  </h1>
+<h3><%=@collection.description%> </h3>
+<h3> <u>Contained Files </u></h3>
+<%= render partial: 'search_form'%>
+<%= render partial:'document_list', locals:{documents: @member_docs} %>
