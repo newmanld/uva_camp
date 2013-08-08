@@ -1,0 +1,51 @@
+<div class="container">
+<%-# This syntax [collections, @collection] tells form_for to use the routes from the engine named collections %>
+<%= form_for([collections, @collection]) do |f| %>
+  <% if @collection.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@collection.errors.count, "error") %> prohibited this topic from being saved:</h2>
+
+      <ul>
+      <% @collection.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  
+  <div class="control-group">
+    <h3>Visibility - <small>who should have the ability to read and download</small></h3>
+      <div class="controls">
+        <label class="radio">
+          <input type="radio" id="visibility_open" name="collection[visibility]" value="open" <% if @collection.visibility == "open" %> checked="true"<% end %>/> <span class="label label-success">Open Access</span> Visible to the world.
+        </label>
+        <label class="radio">
+          <input type="radio" id="visibility_psu" name="collection[visibility]" value="psu" <% if @collection.visibility == "psu" %> checked="true"<% end %> /><span class="label label-info"><%=t('sufia.institution_name') %></span> Visible to all <%=t('sufia.institution_name') %> users. 
+        </label>
+        <label class="radio">
+          <input type="radio" id="visibility_restricted" name="collection[visibility]" value="restricted"<% if @collection.visibility == "restricted" %> checked="true"<% end %> /> <span class="label label-important">Private</span> Visible to users/groups specified below, if any. 
+        </label>
+    </div><!-- /.controls -->
+  </div><!-- /.control-group --> 
+  
+  <%- unless params[:batch_document_ids].nil? || params[:batch_document_ids].empty? %>
+    <%- params[:batch_document_ids].each do |batch_item| %>
+      <input type="hidden" name="batch_document_ids[]" value="<%= batch_item %>"/>
+    <%- end %>
+  <%- end %>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+</div>
