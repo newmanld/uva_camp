@@ -7,36 +7,6 @@ GIT
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
 
-GIT
-  remote: http://github.com/mdaines/sufia.git
-  revision: ef2f1d228b3e313fdfb515f812e9d1c39f7f4985
-  specs:
-    sufia (3.0.0)
-      blacklight (~> 4.0)
-      blacklight_advanced_search (~> 2.1.0)
-      daemons (= 1.1.9)
-      font-awesome-sass-rails (~> 3.0)
-      hydra-batch-edit (~> 1.0)
-      mail_form
-      rails_autolink (~> 1.1.0)
-      rainbow (= 1.1.4)
-      sufia-models (= 3.0.0)
-      yaml_db (= 0.2.3)
-    sufia-models (3.0.0)
-      active-fedora (~> 6.4.0)
-      activeresource
-      acts_as_follower (= 0.1.1)
-      curationexperts-mailboxer (= 0.10.3)
-      hydra-derivatives (~> 0.0.5)
-      hydra-head (~> 6.3.0)
-      nest (~> 1.1.1)
-      noid (~> 0.6.6)
-      paperclip (~> 3.4.0)
-      rails (>= 3.2.13, < 5.0)
-      resque (~> 1.23.0)
-      resque-pool (= 0.3.0)
-      zipruby (= 0.3.6)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -344,6 +314,31 @@ GEM
       sprockets (~> 2.8)
     sqlite3 (1.3.8)
     stomp (1.2.14)
+    sufia (3.1.1)
+      blacklight (~> 4.0)
+      blacklight_advanced_search (~> 2.1.0)
+      daemons (= 1.1.9)
+      font-awesome-sass-rails (~> 3.0)
+      hydra-batch-edit (~> 1.0)
+      mail_form
+      rails_autolink (~> 1.1.0)
+      rainbow (= 1.1.4)
+      sufia-models (= 3.1.1)
+      yaml_db (= 0.2.3)
+    sufia-models (3.1.1)
+      active-fedora (~> 6.4.0)
+      activeresource
+      acts_as_follower (= 0.1.1)
+      curationexperts-mailboxer (= 0.10.3)
+      hydra-derivatives (~> 0.0.5)
+      hydra-head (~> 6.3.0)
+      nest (~> 1.1.1)
+      noid (~> 0.6.6)
+      paperclip (~> 3.4.0)
+      rails (>= 3.2.13, < 5.0)
+      resque (~> 1.23.0)
+      resque-pool (= 0.3.0)
+      zipruby (= 0.3.6)
     therubyracer (0.12.0)
       libv8 (~> 3.16.14.0)
       ref
@@ -396,7 +391,7 @@ DEPENDENCIES
   sass-rails (~> 4.0.0)
   sdoc
   sqlite3
-  sufia!
+  sufia
   therubyracer
   turbolinks
   uglifier (>= 1.3.0)
