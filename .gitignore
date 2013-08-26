@@ -15,4 +15,4 @@
 /log/*.log
 /tmp
 /jetty
-/dump.rdb
+dump.rdb
