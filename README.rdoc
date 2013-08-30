@@ -1,5 +1,12 @@
 == README
 
+This is a sandbox Hydra Application first developed at UVA Hydra Camp August 5th - 9th.
+
+At the University of Cincinnati, Thomas Scherz, James Van Mil, and Linda Newman are exploring the Hydra-Collecitons GEM
+
+Please be advised this is not meant to be a production Hydra Head.
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
