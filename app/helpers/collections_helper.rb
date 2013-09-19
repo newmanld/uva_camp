@@ -7,6 +7,11 @@ module CollectionsHelper
     render partial:'/collections/button_create_collection', locals:{label:label}
   end
 
+  # Displays the Collections create subcollection button. 
+  def button_for_create_sub_collection(label = 'Create Subcollection', collection_id = 'collection_id')
+    render partial:'/collections/button_create_sub_collection', locals:{label:label, collection_id:collection_id}
+  end
+
   # Displays the Collections update collection button.  Put this in your search result page template.  We recommend putting it in catalog/_sort_and_per_page.html.erb
   def button_for_update_collection(label = 'Update Collection', collection_id = 'collection_replace_id' )
     render partial:'/collections/button_for_update_collection', locals:{label:label, collection_id:collection_id}
