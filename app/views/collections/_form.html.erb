@@ -43,6 +43,11 @@
       <input type="hidden" name="batch_document_ids[]" value="<%= batch_item %>"/>
     <%- end %>
   <%- end %>
+
+
+<%- unless params[:collection_id].blank? -%>
+  <input type="hidden" name="collection_id" value="<%= params[:collection_id] -%>" /> 
+<%- end %>
   
   <div class="actions">
     <%= f.submit %>
