@@ -23,5 +23,17 @@ class CollectionsController < ApplicationController
   include Sufia::Noid # for normalize_identifier method
   prepend_before_filter :normalize_identifier, :except => [:index, :create, :new]
   
+
+def after_create
+    parent_id = params[:collection_id]
+    unless parent_id.blank?
+      parent = Collection.find(parent_id)
+      parent.members << @collection
+      parent.save
+    end
+
+    super
+    
+  end
   
 end
