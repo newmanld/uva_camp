@@ -49,7 +49,7 @@ end
 gem 'blacklight'
 gem 'hydra-head'
 #gem 'sufia', git: 'http://github.com/mdaines/sufia.git'
-gem 'sufia', '~> 3.3.0'
+gem 'sufia'
 
 gem 'kaminari', git: 'http://github.com/harai/kaminari.git', branch: 'route_prefix_prototype'  # required to handle pagination properly in dashboard. See https://github.com/amatsuda/kaminari/pull/322
 gem 'jettywrapper'
@@ -61,7 +61,8 @@ gem "devise"
 gem "devise-guests", "~> 0.3"
 gem "bootstrap-sass"
 gem "activerecord-import"
-gem 'hydra-collections'
+gem 'hydra-collections', '~> 1.0.0'
+gem 'hydra-batch-edit', '~> 1.0.2'
 
 group :development, :test do
   gem "rspec-rails"
