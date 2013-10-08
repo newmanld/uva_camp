@@ -49,7 +49,8 @@ end
 gem 'blacklight'
 gem 'hydra-head'
 #gem 'sufia', git: 'http://github.com/mdaines/sufia.git'
-gem 'sufia'
+gem 'sufia', '~> 3.3.0'
+
 gem 'kaminari', git: 'http://github.com/harai/kaminari.git', branch: 'route_prefix_prototype'  # required to handle pagination properly in dashboard. See https://github.com/amatsuda/kaminari/pull/322
 gem 'jettywrapper'
 gem 'font-awesome-sass-rails'
@@ -68,3 +69,4 @@ group :development, :test do
   gem "factory_girl_rails"
   gem "jettywrapper"
 end
+
