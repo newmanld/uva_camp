@@ -63,6 +63,8 @@ gem "bootstrap-sass"
 gem "activerecord-import"
 gem 'hydra-collections', '~> 1.0.0'
 gem 'hydra-batch-edit', '~> 1.0.2'
+#gem 'active-fedora', git: 'http://github.com/projecthydra/active_fedora.git', branch: '6.6-stable'
+gem 'active-fedora', '~> 6.6.0'
 
 group :development, :test do
   gem "rspec-rails"

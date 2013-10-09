@@ -19,7 +19,7 @@ GEM
       erubis (~> 2.7.0)
       rack (~> 1.5.2)
       rack-test (~> 0.6.2)
-    active-fedora (6.5.1)
+    active-fedora (6.6.0)
       activesupport (>= 3.0.0)
       deprecation
       mediashelf-loggable
@@ -329,7 +329,7 @@ GEM
       sufia-models (= 3.3.0)
       yaml_db (= 0.2.3)
     sufia-models (3.3.0)
-      active-fedora (~> 6.5.0)
+      active-fedora (~> 6.6.0)
       activeresource
       acts_as_follower (>= 0.1.1, < 0.3)
       hydra-derivatives (~> 0.0.5)
@@ -355,7 +355,7 @@ GEM
     trollop (1.16.2)
     turbolinks (1.3.0)
       coffee-rails
-    tzinfo (0.3.37)
+    tzinfo (0.3.38)
     uglifier (2.2.1)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
@@ -374,6 +374,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active-fedora (~> 6.6.0)
   activerecord-import
   blacklight
   bootstrap-sass
