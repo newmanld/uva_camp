@@ -19,11 +19,7 @@ GEM
       erubis (~> 2.7.0)
       rack (~> 1.5.2)
       rack-test (~> 0.6.2)
-<<<<<<< HEAD
     active-fedora (6.7.0.rc1)
-=======
-    active-fedora (6.6.0)
->>>>>>> 4b657dac62f3b165d8cfc739eebb4bad277c44fb
       activesupport (>= 3.0.0)
       deprecation
       mediashelf-loggable
@@ -60,11 +56,7 @@ GEM
     atomic (1.1.14)
     backports (3.3.5)
     bcrypt-ruby (3.1.2)
-<<<<<<< HEAD
     blacklight (4.5.0)
-=======
-    blacklight (4.4.2)
->>>>>>> 4b657dac62f3b165d8cfc739eebb4bad277c44fb
       bootstrap-sass (>= 2.2.0, < 2.4)
       kaminari (~> 0.13)
       marc (>= 0.4.3, < 1.1)
@@ -135,13 +127,8 @@ GEM
       activerecord (>= 3.0.0)
     hike (1.2.3)
     hooks (0.3.1)
-<<<<<<< HEAD
     hydra-access-controls (6.4.0)
       active-fedora (~> 6.6)
-=======
-    hydra-access-controls (6.4.0.rc5)
-      active-fedora (>= 6.6.0.rc1)
->>>>>>> 4b657dac62f3b165d8cfc739eebb4bad277c44fb
       activesupport
       blacklight (~> 4.0)
       cancan
@@ -149,26 +136,15 @@ GEM
     hydra-batch-edit (1.1.1)
       blacklight
       hydra-collections
-<<<<<<< HEAD
     hydra-collections (1.2.0)
       blacklight
       hydra-head (~> 6.4.0)
     hydra-core (6.4.0)
-=======
-    hydra-collections (1.1.0)
-      blacklight
-      hydra-head
-    hydra-core (6.4.0.rc5)
->>>>>>> 4b657dac62f3b165d8cfc739eebb4bad277c44fb
       active-fedora
       blacklight (~> 4.0)
       block_helpers
       deprecation (>= 0.0.5)
-<<<<<<< HEAD
       hydra-access-controls (= 6.4.0)
-=======
-      hydra-access-controls (= 6.4.0.rc5)
->>>>>>> 4b657dac62f3b165d8cfc739eebb4bad277c44fb
       jettywrapper (>= 1.4.1)
       rails (>= 3.2.3, < 5)
     hydra-derivatives (0.0.7)
@@ -176,19 +152,11 @@ GEM
       activesupport (>= 3.2.13, < 5.0)
       hydra-file_characterization
       mini_magick
-<<<<<<< HEAD
     hydra-file_characterization (0.3.1)
       activesupport (>= 3.0.0)
     hydra-head (6.4.0)
       hydra-access-controls (= 6.4.0)
       hydra-core (= 6.4.0)
-=======
-    hydra-file_characterization (0.2.9)
-      activesupport (>= 3.0.0)
-    hydra-head (6.4.0.rc5)
-      hydra-access-controls (= 6.4.0.rc5)
-      hydra-core (= 6.4.0.rc5)
->>>>>>> 4b657dac62f3b165d8cfc739eebb4bad277c44fb
       rails (>= 3.2.6)
     i18n (0.6.5)
     jbuilder (1.5.2)
@@ -221,11 +189,7 @@ GEM
     mime-types (1.25)
     mini_magick (3.6.0)
       subexec (~> 0.2.1)
-<<<<<<< HEAD
     mini_portile (0.5.2)
-=======
-    mini_portile (0.5.1)
->>>>>>> 4b657dac62f3b165d8cfc739eebb4bad277c44fb
     minitest (4.7.5)
     multi_json (1.8.2)
     nest (1.1.2)
@@ -358,11 +322,7 @@ GEM
     sqlite3 (1.3.8)
     stomp (1.3.1)
     subexec (0.2.3)
-<<<<<<< HEAD
     sufia (3.4.0.rc3)
-=======
-    sufia (3.4.0.rc2)
->>>>>>> 4b657dac62f3b165d8cfc739eebb4bad277c44fb
       blacklight_advanced_search (~> 2.1.0)
       daemons (= 1.1.9)
       font-awesome-sass-rails (~> 3.0)
@@ -370,7 +330,6 @@ GEM
       mail_form
       rails_autolink (~> 1.1.0)
       rainbow (= 1.1.4)
-<<<<<<< HEAD
       sufia-models (= 3.4.0.rc3)
       yaml_db (= 0.2.3)
     sufia-models (3.4.0.rc3)
@@ -379,16 +338,6 @@ GEM
       acts_as_follower (>= 0.1.1, < 0.3)
       hydra-derivatives (~> 0.0.5)
       hydra-head (~> 6.4.0)
-=======
-      sufia-models (= 3.4.0.rc2)
-      yaml_db (= 0.2.3)
-    sufia-models (3.4.0.rc2)
-      active-fedora (~> 6.6.0.rc1)
-      activeresource
-      acts_as_follower (>= 0.1.1, < 0.3)
-      hydra-derivatives (~> 0.0.5)
-      hydra-head (~> 6.4.0.rc5)
->>>>>>> 4b657dac62f3b165d8cfc739eebb4bad277c44fb
       mailboxer (~> 0.11.0)
       nest (~> 1.1.1)
       noid (~> 0.6.6)
@@ -411,11 +360,7 @@ GEM
     turbolinks (1.3.0)
       coffee-rails
     tzinfo (0.3.38)
-<<<<<<< HEAD
     uglifier (2.3.0)
-=======
-    uglifier (2.2.1)
->>>>>>> 4b657dac62f3b165d8cfc739eebb4bad277c44fb
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     unicode (0.4.4)
@@ -433,11 +378,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-<<<<<<< HEAD
   active-fedora (~> 6.7.0.rc1)
-=======
-  active-fedora (~> 6.6.0)
->>>>>>> 4b657dac62f3b165d8cfc739eebb4bad277c44fb
   activerecord-import
   blacklight
   bootstrap-sass
@@ -449,11 +390,7 @@ DEPENDENCIES
   font-awesome-sass-rails
   hydra-batch-edit
   hydra-collections
-<<<<<<< HEAD
   hydra-head
-=======
-  hydra-head (~> 6.4.0.rc5)
->>>>>>> 4b657dac62f3b165d8cfc739eebb4bad277c44fb
   jbuilder (~> 1.2)
   jettywrapper
   jquery-rails
@@ -463,11 +400,7 @@ DEPENDENCIES
   sass-rails (~> 4.0.0)
   sdoc
   sqlite3
-<<<<<<< HEAD
   sufia (~> 3.4.0.rc3)
-=======
-  sufia (~> 3.4.0.rc2)
->>>>>>> 4b657dac62f3b165d8cfc739eebb4bad277c44fb
   therubyracer
   turbolinks
   uglifier (>= 1.3.0)

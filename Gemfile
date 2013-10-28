@@ -48,14 +48,8 @@ end
 
 gem 'active-fedora', '~>6.7.0.rc1'
 gem 'blacklight'
-gem 'hydra-head', '~> 6.4.0.rc5'
-#gem 'sufia', git: 'http://github.com/mdaines/sufia.git'
-<<<<<<< HEAD
+gem 'hydra-head'
 gem 'sufia', '~> 3.4.0.rc3'
-=======
-gem 'sufia', '~> 3.4.0.rc2'
->>>>>>> 4b657dac62f3b165d8cfc739eebb4bad277c44fb
-
 gem 'kaminari', git: 'http://github.com/harai/kaminari.git', branch: 'route_prefix_prototype'  # required to handle pagination properly in dashboard. See https://github.com/amatsuda/kaminari/pull/322
 gem 'jettywrapper'
 gem 'font-awesome-sass-rails'
@@ -66,19 +60,8 @@ gem "devise"
 gem "devise-guests", "~> 0.3"
 gem "bootstrap-sass"
 gem "activerecord-import"
-<<<<<<< HEAD
 gem 'hydra-collections'
 gem 'hydra-batch-edit'
-
-
-=======
-#gem 'hydra-collections', '~> 1.0.0'
-#gem 'hydra-batch-edit', '~> 1.0.2'
-gem 'hydra-collections'
-gem 'hydra-batch-edit'
-#gem 'active-fedora', git: 'http://github.com/projecthydra/active_fedora.git', branch: '6.6-stable'
-gem 'active-fedora', '~> 6.6.0'
->>>>>>> 4b657dac62f3b165d8cfc739eebb4bad277c44fb
 
 group :development, :test do
   gem "rspec-rails"
