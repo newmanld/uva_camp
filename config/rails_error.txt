@@ -1,0 +1,8 @@
+/root/uva_camp/config/application.rb:4:in `require': cannot load such file -- hydra/access_controls/permissions (LoadError)
+	from /root/uva_camp/config/application.rb:4:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.0.0-p195/gems/railties-4.0.0/lib/rails/commands.rb:76:in `require'
+	from /usr/local/rvm/gems/ruby-2.0.0-p195/gems/railties-4.0.0/lib/rails/commands.rb:76:in `block in <top (required)>'
+	from /usr/local/rvm/gems/ruby-2.0.0-p195/gems/railties-4.0.0/lib/rails/commands.rb:73:in `tap'
+	from /usr/local/rvm/gems/ruby-2.0.0-p195/gems/railties-4.0.0/lib/rails/commands.rb:73:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
