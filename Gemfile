@@ -62,8 +62,7 @@ gem "bootstrap-sass"
 gem "activerecord-import"
 gem 'hydra-collections'
 gem 'hydra-batch-edit'
-gem 'hydra-collections'
-gem 'hydra-batch-edit'
+
 group :development, :test do
   gem "rspec-rails"
   gem "capybara"
